@@ -309,7 +309,7 @@ td > img {
   height: 80px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .modal {
     height: 85vh;
     width: 95vw;
@@ -350,7 +350,7 @@ td > img {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 800px) {
   .modal__content-mobile {
     display: none;
   }
