@@ -350,7 +350,7 @@ td > img {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .modal__content-mobile {
     display: none;
   }
