@@ -264,12 +264,15 @@ img.icon {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
+  max-height: 80%;
 
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 .overlay {
@@ -283,9 +286,32 @@ img.icon {
   z-index: 5;
 }
 
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+td > img {
+  width: 120px;
+  height: 110px;
+}
+
+.jrp,
+.nuon {
+  width: 170px;
+  height: 80px;
+}
+
 @media screen and (max-width: 768px) {
   .modal {
-    height: 95vh;
+    height: 85vh;
     width: 95vw;
     padding: 4rem;
     overflow: scroll;
@@ -300,4 +326,37 @@ img.icon {
   .modal__content {
     font-size: 2rem;
   }
+
+  td {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal__content-desktop {
+    display: none;
+  }
+
+  td > img {
+    width: 250px;
+    height: 240px;
+  }
+
+  .jrp,
+  .nuon {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .modal__content-mobile {
+    display: none;
+  }
+}
+
+.unsia {
+  width: 150px;
+  height: 150px;
 }
