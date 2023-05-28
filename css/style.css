@@ -285,10 +285,12 @@ img.icon {
 
 @media screen and (max-width: 768px) {
   .modal {
-    height: 100%;
-    width: 90%;
+    height: 95vh;
+    width: 95vw;
     padding: 4rem;
     overflow: scroll;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
   }
 
   .modal__head {
