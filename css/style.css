@@ -208,8 +208,8 @@ img.icon {
 
 @media screen and (max-width: 768px) {
   .hero__image {
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 320px;
   }
 }
 
