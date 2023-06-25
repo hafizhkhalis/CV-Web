@@ -13,6 +13,8 @@ const btnCloseModal = document.querySelectorAll('.close-modal');
 
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 
+const btnView = document.querySelector('.icon-view');
+
 // Function to open the modal view
 const openModal = function (i) {
   modal[i].classList.remove('hidden');
@@ -40,3 +42,12 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
       closeModal(i);
   });
 }
+
+// btnView.addEventListener('click', () => openModal(5));
+// btnCloseModal[5].addEventListener('click', () => closeModal(5));
+// overlay[5].addEventListener('click', () => closeModal(5));
+
+// document.addEventListener('keydown', function (e) {
+//   if (e.key === 'Escape' && !modal[5].classList.contains('hidden'))
+//     closeModal(5);
+// });
